@@ -1,18 +1,20 @@
-import "./App.css";
+import css from './App.module.css';
+import ContactList from '../contactList/ContactList';
+import ContactForm from '../ContactForm/ContactForm';
+import SearchBox from '../SearchBox/SearchBox';
 
-import ContactForm from "../contactForm/contactForm";
-import SearchBox from "../searchBox/searchBox";
-import ContactList from "../contactList/contactList";
+// export default function App() {
+const App = () => {
 
-function App() {
+  
   return (
-    <>
-      <h1>Phonebook</h1>
+    <div className={css.container}>
+      <h1 className={css.title}>Phonebook</h1>
       <ContactForm />
       <SearchBox />
-      <ContactList />
-    </>
+      <ContactList/>
+    </div>
   );
-}
+};
 
 export default App;

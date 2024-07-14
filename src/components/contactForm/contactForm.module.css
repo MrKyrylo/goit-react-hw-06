@@ -1,33 +1,37 @@
-.addContact {
+.form {
+    min-width: 320px;
+    width: 345px;
+    border: 1px solid black;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
-
-    border: 1px solid gray;
-    border-radius: 4px;
-
-    padding: 17px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 40px;
     margin-bottom: 20px;
-
-    width: 300px;
 }
 
-.formField {
-    margin-bottom: 14px;
+.form>input {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    height: 40px;
 }
 
-.addBut {
-    height: 26px;
-    width: 90px;
-    background-color: #c6c6c6;
-
-    border: 1px solid gray;
-    border-radius: 3px;
-
-    align-self: center;
-
-    cursor: pointer;
+.btn_add {
+    max-width: 150px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    background-color: lightgray;
 }
 
-.addBut:hover {
-    background-color: #cbcaca;
+.error {
+    color: red;
 }
